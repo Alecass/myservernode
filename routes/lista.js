@@ -29,11 +29,15 @@ router.get('/', (req, res) => {
   })
 
   router.put('/update', (req, res) => {
-    res.send('Todo Updated');
+    status={}
+    status.message = 'Todo Updated'
+    res.send(status)
   })
 
   router.delete('/delete', (req, res) => {
-    res.send('Todo Deleted');
+    status={}
+    status.message = 'Todo Deleted'
+    res.send(status)
   })
   
 
